@@ -1,0 +1,25 @@
+##############################################################
+
+RCmicro.name=RECEIVERmicro 12MHz (Bootloader)
+
+RCmicro.upload.tool=avrdude
+RCmicro.upload.protocol=arduino
+RCmicro.upload.maximum_size=32256
+RCmicro.upload.maximum_data_size=2048
+RCmicro.upload.speed=57600
+
+RCmicro.bootloader.tool=avrdude
+RCmicro.bootloader.low_fuses=0xFF
+RCmicro.bootloader.high_fuses=0xDE
+RCmicro.bootloader.extended_fuses=0xFE
+RCmicro.bootloader.unlock_bits=0x3F
+RCmicro.bootloader.lock_bits=0x0F
+RCmicro.bootloader.file=optiboot/optiboot_atmega328_12MHz.hex
+
+RCmicro.build.mcu=atmega328p
+RCmicro.build.f_cpu=12000000L
+RCmicro.build.board=AVR_UNO
+RCmicro.build.core=arduino
+RCmicro.build.variant=standard
+
+##############################################################
